@@ -14,7 +14,7 @@ To test whether **firm-specific news events** lead to statistically significant 
 ## Methodology
 
 - **Regression Model Specifications**
-Abnormal returns estimated based on market model: yᵢₜ = α + β·yₜᵐ + εₜ
+Abnormal returns estimated based on market model: yᵢₜ = α + β·yₜᵐ + εₜ 
 Abnormal returns given by: eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
 Cumulative abnormal return: CAR_event = ∑ (ARₜ)  from t = 1 to T
 
