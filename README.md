@@ -14,14 +14,12 @@ To test whether **firm-specific news events** lead to statistically significant 
 ## Methodology
 
 - **Regression Model Specifications**
-- Abnormal returns estimated based on market model:
-- yᵢₜ = α + β·yₜᵐ + εₜ
-- Abnormal returns given by:
-- eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
-- Cumulative abnormal return:
-- CAR_event = ∑ (ARₜ)  from t = 1 to T
+- Abnormal returns estimated based on market model: yᵢₜ = α + β·yₜᵐ + εₜ
+- Abnormal returns given by: eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
+- Cumulative abnormal return: CAR_event = ∑ (ARₜ)  from t = 1 to T
 
 - **Event Study Framework**: Estimated market model using an estimation window; calculated abnormal and cumulative abnormal returns in event windows.
+- Event window: [t0-3; t0+3], t0 - event date
 - **Regression Analysis**: Tested the effect of news volume on abnormal return magnitude.
 - **Hypothesis Testing**: Used t-tests to determine statistical significance of CARs.
 - **Data Visualization**: Histograms, CAR plots, and return distributions analyzed across companies and event types.
@@ -29,13 +27,15 @@ To test whether **firm-specific news events** lead to statistically significant 
 ---
 
 ## Key Findings
-
-- News volume significantly influences the **magnitude** of abnormal returns (p = 0.0201).
-- **Strategic and sentiment-related events** triggered stronger market reactions than routine announcements.
-- Abnormal returns were statistically significant for most firms — especially AMZN and MSFT.
-- **NVDA's personnel changes** caused a pronounced stock reaction, while dividend announcements showed limited effect.
 - Return distributions deviated from normality, but large sample size justified the regression approach.
-  ![Distribution of stock returns by company](Rplot06.png)
+![Distribution of stock returns by company](Rplot06.png)
+- News volume significantly influences the **magnitude** of abnormal returns.
+- **Strategic and sentiment-related events** triggered stronger market reactions than routine announcements.
+- **Statistically significant independent variables that influence AR** MSFT - corporate earnings (0.00002); JPM - corporate earnings (-0.001) NVDA - Personnel changes (-0.002), Dividends (0.001); AMZN - Analyst comments (-0.002)
+- **Cumulative abnormal return analysis**
+- Using t-test, CAR by companies showed statistical significance at different levels: MSFT (p = 0.03538), JPM (p = 0.01661), NVDA Dividents (p = 0.0885), NVDA personnel changes (p = 0.4669, insignificant), AMZN (p = 0.04313)
+![CAR by company](Rplot.png)
+
 
 ---
 
@@ -49,18 +49,14 @@ To test whether **firm-specific news events** lead to statistically significant 
 
 ## Conclusion
 
-This project demonstrates that **not all news is equal** — investors react differently depending on the **type and volume** of firm-specific events. The results offer practical insights for analysts, investors, and financial strategists interested in market sentiment and event-driven trading.
+News events significantly influence stock returns, especially earnings-related news.
+Some events have stronger impacts than others, and market reactions vary.
+This project demonstrates that **not all news is equal** — investors react differently depending on the **type and volume** of firm-specific events. 
 
 ---
 
 ## File Summary
 
-- `news_event_stock_analysis.ipynb`: Complete code for preprocessing, analysis, and visualization
-- `data/`: Contains preprocessed data samples (if not too large for GitHub)
+- `setiment_AR.zip`: Contains data, Fama-French factors daily, and complete code for preprocessing, analysis, and visualization
 
----
-
-## 💬 Contact
-
-Feel free to reach out or open an issue if you'd like to discuss methodology or collaborate.
 
