@@ -13,13 +13,13 @@ To test whether **firm-specific news events** lead to statistically significant 
 
 ## Methodology
 
-- **Regression Model Specifications**
-Abnormal returns estimated based on market model: yᵢₜ = α + β·yₜᵐ + εₜ 
-Abnormal returns given by: eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
-Cumulative abnormal return: CAR_event = ∑ (ARₜ)  from t = 1 to T
+**Regression Model Specifications**
+- Abnormal returns estimated based on market model: yᵢₜ = α + β·yₜᵐ + εₜ 
+- Abnormal returns given by: eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
+- Cumulative abnormal return: CAR_event = ∑ (ARₜ)  from t = 1 to T
 
-- **Event Study Framework**: Estimated market model using an estimation window; calculated abnormal and cumulative abnormal returns in event windows.
-Event window: [t0-3; t0+3], t0 - event date
+**Event Study Framework**: Estimated market model using an estimation window; calculated abnormal and cumulative abnormal returns in event windows.
+- Event window: [t0-3; t0+3], t0 - event date
 - **Regression Analysis**: Tested the effect of news volume on abnormal return magnitude.
 - **Hypothesis Testing**: Used t-tests to determine statistical significance of CARs.
 - **Data Visualization**: Histograms, CAR plots, and return distributions analyzed across companies and event types.
