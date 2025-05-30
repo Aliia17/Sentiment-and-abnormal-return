@@ -1,7 +1,5 @@
 # News Events & Abnormal Stock Returns
 
-eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
-
 
 This project explores the relationship between firm-specific news events and **abnormal stock returns**, using data from a Kaggle dataset. The analysis focuses on four major publicly listed companies — **Microsoft (MSFT), Nvidia (NVDA), Amazon (AMZN), and JPMorgan Chase (JPM)** — and investigates how different types of news affect stock price behavior.
 
@@ -14,6 +12,14 @@ To test whether **firm-specific news events** lead to statistically significant 
 ---
 
 ## Methodology
+
+- **Regression Model Specifications**
+- Abnormal returns estimated based on market model:
+- yᵢₜ = α + β·yₜᵐ + εₜ
+- Abnormal returns given by:
+- eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
+- Cumulative abnormal return:
+- CAR_event = ∑ (ARₜ)  from t = 1 to T
 
 - **Event Study Framework**: Estimated market model using an estimation window; calculated abnormal and cumulative abnormal returns in event windows.
 - **Regression Analysis**: Tested the effect of news volume on abnormal return magnitude.
