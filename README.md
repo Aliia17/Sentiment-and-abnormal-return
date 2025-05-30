@@ -1,5 +1,8 @@
 # News Events & Abnormal Stock Returns
 
+eᵢ_{τ,0} = yᵢ_τ − (α̂ + β̂·yᵐ_τ)
+
+
 This project explores the relationship between firm-specific news events and **abnormal stock returns**, using data from a Kaggle dataset. The analysis focuses on four major publicly listed companies — **Microsoft (MSFT), Nvidia (NVDA), Amazon (AMZN), and JPMorgan Chase (JPM)** — and investigates how different types of news affect stock price behavior.
 
 ---
@@ -26,7 +29,7 @@ To test whether **firm-specific news events** lead to statistically significant 
 - Abnormal returns were statistically significant for most firms — especially AMZN and MSFT.
 - **NVDA's personnel changes** caused a pronounced stock reaction, while dividend announcements showed limited effect.
 - Return distributions deviated from normality, but large sample size justified the regression approach.
-  ![Dostribution of stock returns by company](Rplot06.png)
+  ![Distribution of stock returns by company](Rplot06.png)
 
 ---
 
